@@ -6,7 +6,7 @@
 /*   By: hladeiro <hladeiro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 20:13:26 by hladeiro          #+#    #+#             */
-/*   Updated: 2024/06/07 00:24:44 by hladeiro         ###   ########.fr       */
+/*   Updated: 2024/06/07 21:31:00 by hladeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,5 @@
 
 #define WINDOW_WIDTH    1280 
 #define WINDOW_HEIGHT	720
-
-
-typedef struct s_player
-{
-    int	x;
-    int	y;
-    int width;
-    int height;
-    void	*image;
-	int	current_frameframes;
-	char	dir;
-}	t_player;
 
 #endif

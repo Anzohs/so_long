@@ -6,7 +6,7 @@
 /*   By: hladeiro <hladeiro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 17:49:38 by hladeiro          #+#    #+#             */
-/*   Updated: 2024/06/06 23:07:57 by hladeiro         ###   ########.fr       */
+/*   Updated: 2024/06/07 21:34:58 by hladeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,17 +53,31 @@ typedef struct s_machine
 	t_fun		current;
 }				t_machine;
 
+typedef struct s_player
+{
+    int	x;
+    int	y;
+    int width;
+    int height;
+    void	*image;
+	char	dir;
+}	t_player;
+
 typedef struct s_data
 {
     void	*mlx_ptr;
     void	*window_ptr;
 	void	*img;
 	void	*img2;
+	void	*wall;
+	void	*ground;
 	int	x;
 	int	y;
 	int	x1;
 	int	y1;
 	int	delta;
+	void		*p_p;
+	t_player	player;
 	t_machine	m;
     //t_map   *map;     this will be map in the future to run our game!
 }		t_data;
